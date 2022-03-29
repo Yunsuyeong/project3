@@ -1,0 +1,52 @@
+.current {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    background-color: white;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+        0 8px 16px -8px rgba(0, 0, 0, 0.3),
+        0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.current_icon {
+    display: block;
+    margin: 0px auto;
+    position: relative;
+    top: -10px;
+}
+
+.current_city {
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+.current_temp {
+    font-size: 30px;
+    position: relative;
+    top: -50px;
+}
+
+.current_detail {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+}
+
+.current_detail li {
+    position: relative;
+    top: -50px;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
