@@ -12,7 +12,7 @@ function Weather({ time, temp, feels_like, humidity, wind_speed, icon }) {
                 width="80"
                 height="80"
             ></img>
-            <h2 className={styles.current_temp}>{temp.toFixed(1)}℃</h2>
+            <p className={styles.current_temp}>{temp.toFixed(1)}℃</p>
             <ul className={styles.current_detail}>
                 <li key={feels_like}>체감 : {feels_like.toFixed(1)}℃</li>
                 <li key={humidity}>습도 : {humidity}%</li>

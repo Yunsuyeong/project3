@@ -27,6 +27,7 @@ function Home() {
             ) : (
                 <div className={styles.weatherDet}>
                     <Weather
+                        key={current.dt}
                         time={current.dt}
                         feels_like={current.feels_like}
                         temp={current.temp}

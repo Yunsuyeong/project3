@@ -1,1 +1,60 @@
-/* 미구현 상태 */
+.daily {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr);
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    background-color: lightcyan;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+        0 8px 16px -8px rgba(0, 0, 0, 0.3),
+        0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.daily_icon {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+}
+
+.daily_time {
+    margin: 5px;
+    position: relative;
+    top: -10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.daily_temp {
+    position: relative;
+    top: -20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.daily_suntime {
+    position: relative;
+    top: -15px;
+    font-size: 12px;
+}
+
+.daily_humid {
+    position: relative;
+    top: -15px;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+
+.daily_wind {
+    position: relative;
+    top: -30px;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}

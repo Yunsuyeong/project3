@@ -28,11 +28,22 @@ function Daily() {
                 <div className={styles.dailyDet}>
                     {daily.map((day) => (
                         <DailyWe
-                            time={day.dt}
+                            key={day.dt}
+                            time={JSON.stringify(new Date(day.dt * 1000)).slice(
+                                6,
+                                11
+                            )}
                             mintemp={day.temp.min}
                             maxtemp={day.temp.max}
-                            humidity={day.humidity}
+                            sunrise={JSON.stringify(
+                                new Date((day.sunrise + 32400) * 1000)
+                            ).slice(12, 17)}
+                            sunset={JSON.stringify(
+                                new Date((day.sunset + 32400) * 1000)
+                            ).slice(12, 17)}
                             icon={day.weather[0].icon}
+                            humidity={day.humidity}
+                            wind_speed={day.wind_speed}
                         />
                     ))}
                 </div>
