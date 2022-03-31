@@ -18,6 +18,9 @@ function Weather({ time, temp, feels_like, humidity, wind_speed, icon }) {
                 <li key={humidity}>습도 : {humidity}%</li>
                 <li key={wind_speed}>풍속 : {wind_speed}m/s</li>
             </ul>
+            <h4 className={styles.current_link}>
+                <Link to={`/daily`}>주간 ⇨</Link>
+            </h4>
         </div>
     );
 }

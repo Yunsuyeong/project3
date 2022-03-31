@@ -15,7 +15,9 @@ function DailyWe({
     let date = new Date();
     return (
         <div className={styles.daily}>
-            <p className={styles.daily_time}>{time}</p>
+            <p className={styles.daily_time}>
+                <Link to={`/`}>{time}</Link>
+            </p>
             <img
                 className={styles.daily_icon}
                 src={`http://openweathermap.org/img/wn/${icon}@2x.png`}

@@ -30,6 +30,11 @@
     text-decoration: none;
 }
 
+.daily_time a {
+    text-decoration: none;
+    color: black;
+}
+
 .daily_temp {
     position: relative;
     top: -20px;
