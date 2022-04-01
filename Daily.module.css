@@ -27,12 +27,18 @@
 }
 
 @media screen and (max-width: 600px) {
+    .dailycontainer {
+        height: 100%;
+    }
     .dailyDet {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 450px) {
+    .dailycontainer {
+        height: 100%;
+    }
     .dailyDet {
         grid-template-columns: repeat(2, 1fr);
     }
